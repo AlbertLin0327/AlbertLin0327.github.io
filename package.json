@@ -8,7 +8,7 @@
   "scripts": {
     "update": "bash generate_posts.sh",
     "dev": "npm run update && bun --hot src/server.ts",
-    "build": "npm run update && vite build",
+    "build": "rm -rf dist && npm run update && vite build",
     "start": "npm run update && NODE_ENV=production bun src/server.ts",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
     "deploy": "gh-pages -d dist"
