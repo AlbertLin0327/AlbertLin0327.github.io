@@ -60,4 +60,4 @@ export default defineConfig({
 });
 ```
 
-Replace `/your-subdirectory/` with the actual path where your site will be hosted. For example, I change it to `albertlin.github.io`.
+Replace `/your-subdirectory/` with the actual path where your site will be hosted. For example, I change it to `/albertlin.github.io/`.
