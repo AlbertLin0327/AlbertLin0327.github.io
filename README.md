@@ -47,3 +47,17 @@ npm run lint
 
 ### Vite Configuration
 The project uses Vite for fast builds and includes optimizations such as chunk splitting for vendor libraries.
+
+## Configuration
+
+### Vite Base URL
+If you are deploying this project to a subdirectory (e.g., GitHub Pages), make sure to update the `base` option in `vite.config.ts` to match your deployment path. For example:
+
+```javascript
+export default defineConfig({
+  base: '/your-subdirectory/',
+  // ...existing code...
+});
+```
+
+Replace `/your-subdirectory/` with the actual path where your site will be hosted. For example, I change it to `albertlin.github.io`.
