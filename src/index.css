@@ -359,6 +359,7 @@ h2 {
 @media (max-width: 768px) {
   .content-wrapper {
     flex-direction: column;
+    margin-top: calc(var(--header-height)); /* Add spacing below the header */
   }
 
   .profile-sidebar {
@@ -375,7 +376,10 @@ h2 {
   .fixed-header {
     flex-direction: column;
     height: auto;
-    padding: 1rem;
+    padding: 0.5rem;
+    position: sticky; /* Ensure the header stays visible without overlapping content */
+    top: 0;
+    z-index: 1000;
   }
 
   .fixed-header .subtitle {
@@ -673,7 +677,7 @@ h2 {
 
 .skill-card {
   background: var(--card-bg);
-  padding: 2rem; /* Increased padding for better spacing */
+  padding: 0.8rem 0.4rem 0.8rem 0.4rem;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
@@ -729,7 +733,6 @@ h2 {
   color: var(--accent-color); /* Use the accent color for advanced skills */
   font-weight: bold;
   background-color: rgba(9, 133, 227, 0.2); /* Light blue background for advanced */
-  padding: 0.2rem 0.6rem;
   border-radius: 12px;
 }
 
@@ -737,7 +740,6 @@ h2 {
   color: var(--secondary-color); /* Use a lighter color for intermediate skills */
   font-weight: normal;
   background-color: rgba(101, 146, 185, 0.1); /* Light gray background for intermediate */
-  padding: 0.2rem 0.6rem;
   border-radius: 12px;
 }
 
