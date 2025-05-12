@@ -37,6 +37,9 @@ export default defineConfig({
     rollupOptions: {
       input: entryPoints(
         "index.html",
+        "about.html",
+        "projects.html",
+        "blog.html",
         "404.html",
       ),
       output: {

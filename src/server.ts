@@ -1,10 +1,15 @@
 import { serve } from "bun";
 import index from "../index.html";
+import about from "../about.html";
+import projects from "../projects.html";
+import blog from "../blog.html";
 
 const server = serve({
   routes: {
-    // Serve index.html for all unmatched routes.
-    "/*": index,
+    "/": index,
+    "/about": about,
+    "/projects": projects,
+    "/blog": blog,
 
     "/api/hello": {
       async GET(req) {
